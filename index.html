@@ -1,42 +1,2275 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Container to ensure the iframe scales properly */
-    .iframe-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-      width: 100%; /* Ensures the container is full width */
-      max-width: 100%; /* Prevents overflow */
-    }
-
-    .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://toastmasters127.org/xmlrpc.php" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <style>
+      img:is([sizes="auto"i], [sizes^="auto,"i]) {
+        contain-intrinsic-size: 3000px 1500px
+      }
+    </style>
     
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
+    
+    
+    <link rel='stylesheet' id='featherlight-css' href='https://toastmasters127.org/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.css?ver=7.18.0' media='all' />
+    <link rel='stylesheet' id='mec-lity-style-css' href='https://toastmasters127.org/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.css?ver=7.18.0' media='all' />
+    <link rel='stylesheet' id='mec-general-calendar-style-css' href='https://toastmasters127.org/wp-content/plugins/modern-events-calendar-lite/assets/css/mec-general-calendar.css?ver=7.18.0' media='all' />
+    <link rel='stylesheet' id='hfe-widgets-style-css' href='https://toastmasters127.org/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.0.6' media='all' />
+    <style id='wp-emoji-styles-inline-css'>
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id='joinchat-button-style-inline-css'>
+      .wp-block-joinchat-button {
+        border: none !important;
+        text-align: center
+      }
 
-<h2>Evaluation Forms</h2>
+      .wp-block-joinchat-button figure {
+        display: table;
+        margin: 0 auto;
+        padding: 0
+      }
 
-<!-- Container to make the iframe responsive -->
-<div class="iframe-container">
-  <iframe src="https://toastmasters127.org/evaluation-forms/" name="iframe_a" title="Iframe Example"></iframe>
-</div>
+      .wp-block-joinchat-button figcaption {
+        font: normal normal 400 .6em/2em var(--wp--preset--font-family--system-font, sans-serif);
+        margin: 0;
+        padding: 0
+      }
 
-</body>
+      .wp-block-joinchat-button .joinchat-button__qr {
+        background-color: #fff;
+        border: 6px solid #25d366;
+        border-radius: 30px;
+        box-sizing: content-box;
+        display: block;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 10px;
+        width: 200px
+      }
+
+      .wp-block-joinchat-button .joinchat-button__qr canvas,
+      .wp-block-joinchat-button .joinchat-button__qr img {
+        display: block;
+        margin: auto
+      }
+
+      .wp-block-joinchat-button .joinchat-button__link {
+        align-items: center;
+        background-color: #25d366;
+        border: 6px solid #25d366;
+        border-radius: 30px;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        line-height: 1.25em;
+        margin: 0 auto;
+        text-decoration: none
+      }
+
+      .wp-block-joinchat-button .joinchat-button__link:before {
+        background: transparent var(--joinchat-ico) no-repeat center;
+        background-size: 100%;
+        content: "";
+        display: block;
+        height: 1.5em;
+        margin: -.75em .75em -.75em 0;
+        width: 1.5em
+      }
+
+      .wp-block-joinchat-button figure+.joinchat-button__link {
+        margin-top: 10px
+      }
+
+      @media (orientation:landscape)and (min-height:481px),
+      (orientation:portrait)and (min-width:481px) {
+        .wp-block-joinchat-button.joinchat-button--qr-only figure+.joinchat-button__link {
+          display: none
+        }
+      }
+
+      @media (max-width:480px),
+      (orientation:landscape)and (max-height:480px) {
+        .wp-block-joinchat-button figure {
+          display: none
+        }
+      }
+    </style>
+    <style id='classic-theme-styles-inline-css'>
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em
+      }
+
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none
+      }
+    </style>
+    <style id='global-styles-inline-css'>
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .is-layout-flex> :is(*, div) {
+        margin: 0;
+      }
+
+      body .is-layout-grid {
+        display: grid;
+      }
+
+      .is-layout-grid> :is(*, div) {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css' href='https://toastmasters127.org/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.2' media='all' />
+    <link rel='stylesheet' id='hfe-style-css' href='https://toastmasters127.org/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.0.6' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.24.4' media='all' />
+    <link rel='stylesheet' id='swiper-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+    <link rel='stylesheet' id='e-swiper-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.24.4' media='all' />
+    <link rel='stylesheet' id='elementor-post-6-css' href='https://toastmasters127.org/wp-content/uploads/elementor/css/post-6.css?ver=1727107507' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css' href='https://toastmasters127.org/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.23.2' media='all' />
+    <link rel='stylesheet' id='widget-heading-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.24.4' media='all' />
+    <link rel='stylesheet' id='elementor-post-2381-css' href='https://toastmasters127.org/wp-content/uploads/elementor/css/post-2381.css?ver=1727963414' media='all' />
+    <link rel='stylesheet' id='elementor-post-13-css' href='https://toastmasters127.org/wp-content/uploads/elementor/css/post-13.css?ver=1727107507' media='all' />
+    <link rel='stylesheet' id='elementor-post-701-css' href='https://toastmasters127.org/wp-content/uploads/elementor/css/post-701.css?ver=1727107507' media='all' />
+    <link rel='stylesheet' id='hello-elementor-css' href='https://toastmasters127.org/wp-content/themes/hello-elementor/style.min.css?ver=3.1.0' media='all' />
+    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://toastmasters127.org/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.0' media='all' />
+    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://toastmasters127.org/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.0' media='all' />
+    <link rel='stylesheet' id='tablepress-default-css' href='https://toastmasters127.org/wp-content/tablepress-combined.min.css?ver=3' media='all' />
+    <link rel='stylesheet' id='joinchat-css' href='https://toastmasters127.org/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=5.1.8' media='all' />
+    <link rel='stylesheet' id='simcal-qtip-css' href='https://toastmasters127.org/wp-content/plugins/google-calendar-events/assets/generated/vendor/jquery.qtip.min.css?ver=3.4.8' media='all' />
+    <link rel='stylesheet' id='simcal-default-calendar-grid-css' href='https://toastmasters127.org/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-grid.min.css?ver=3.4.8' media='all' />
+    <link rel='stylesheet' id='simcal-default-calendar-list-css' href='https://toastmasters127.org/wp-content/plugins/google-calendar-events/assets/generated/default-calendar-list.min.css?ver=3.4.8' media='all' />
+    <link rel='stylesheet' id='hfe-icons-list-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3' media='all' />
+    <link rel='stylesheet' id='hfe-social-icons-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0' media='all' />
+    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3' media='all' />
+    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3' media='all' />
+    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3' media='all' />
+    <link rel='stylesheet' id='hfe-widget-blockquote-css' href='https://toastmasters127.org/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0' media='all' />
+    <link rel='stylesheet' id='wpr-text-animations-css-css' href='https://toastmasters127.org/wp-content/plugins/royal-elementor-addons/assets/css/lib/animations/text-animations.min.css?ver=1.7.1006' media='all' />
+    <link rel='stylesheet' id='wpr-addons-css-css' href='https://toastmasters127.org/wp-content/plugins/royal-elementor-addons/assets/css/frontend.min.css?ver=1.7.1006' media='all' />
+    <link rel='stylesheet' id='font-awesome-5-all-css' href='https://toastmasters127.org/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1.7.1006' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.2' media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script data-cfasync="false" src="https://toastmasters127.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script data-cfasync="false" src="https://toastmasters127.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script id="jquery-js-after">
+      ! function($) {
+        "use strict";
+        $(document).ready(function() {
+          $(this).scrollTop() > 100 && $(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"), $(window).scroll(function() {
+            $(this).scrollTop() < 100 ? $(".hfe-scroll-to-top-wrap").fadeOut(300) : $(".hfe-scroll-to-top-wrap").fadeIn(300)
+          }), $(".hfe-scroll-to-top-wrap").on("click", function() {
+            $("html, body").animate({
+              scrollTop: 0
+            }, 300);
+            return !1
+          })
+        })
+      }(jQuery);
+    </script>
+    <link rel="https://api.w.org/" href="https://toastmasters127.org/wp-json/" />
+    <link rel="alternate" title="JSON" type="application/json" href="https://toastmasters127.org/wp-json/wp/v2/pages/2381" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://toastmasters127.org/xmlrpc.php?rsd" />
+    <meta name="generator" content="WordPress 6.7.2" />
+    <link rel='shortlink' href='https://toastmasters127.org/?p=2381' />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://toastmasters127.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoastmasters127.org%2Fevaluation-forms%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://toastmasters127.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoastmasters127.org%2Fevaluation-forms%2F&#038;format=xml" />
+    <meta name="generator" content="Site Kit by Google 1.146.0" />
+    <meta name="generator" content="Elementor 3.24.4; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <style>
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+
+      @media screen and (max-height: 1024px) {
+
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+
+      @media screen and (max-height: 640px) {
+
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <style id="wp-custom-css">
+      span.simcal-event-title {
+        font-size: 1rem !important;
+        font-family: "Lato" !important;
+      }
+    </style>
+    <style id="wpr_lightbox_styles">
+      .lg-backdrop {
+        background-color: rgba(0, 0, 0, 0.6) !important;
+      }
+
+      .lg-toolbar,
+      .lg-dropdown {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
+
+      .lg-dropdown:after {
+        border-bottom-color: rgba(0, 0, 0, 0.8) !important;
+      }
+
+      .lg-sub-html {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+      }
+
+      .lg-thumb-outer,
+      .lg-progress-bar {
+        background-color: #444444 !important;
+      }
+
+      .lg-progress {
+        background-color: #a90707 !important;
+      }
+
+      .lg-icon {
+        color: #efefef !important;
+        font-size: 20px !important;
+      }
+
+      .lg-icon.lg-toogle-thumb {
+        font-size: 24px !important;
+      }
+
+      .lg-icon:hover,
+      .lg-dropdown-text:hover {
+        color: #ffffff !important;
+      }
+
+      .lg-sub-html,
+      .lg-dropdown-text {
+        color: #efefef !important;
+        font-size: 14px !important;
+      }
+
+      #lg-counter {
+        color: #efefef !important;
+        font-size: 14px !important;
+      }
+
+      .lg-prev,
+      .lg-next {
+        font-size: 35px !important;
+      }
+
+      /* Defaults */
+      .lg-icon {
+        background-color: transparent !important;
+      }
+
+      #lg-counter {
+        opacity: 0.9;
+      }
+
+      .lg-thumb-outer {
+        padding: 0 10px;
+      }
+
+      .lg-thumb-item {
+        border-radius: 0 !important;
+        border: none !important;
+        opacity: 0.5;
+      }
+
+      .lg-thumb-item.active {
+        opacity: 1;
+      }
+    </style>
+    <style>
+      :root,
+      ::before,
+      ::after {
+        --mec-color-skin: #40d9f1;
+        --mec-color-skin-rgba-1: rgba(64, 217, 241, .25);
+        --mec-color-skin-rgba-2: rgba(64, 217, 241, .5);
+        --mec-color-skin-rgba-3: rgba(64, 217, 241, .75);
+        --mec-color-skin-rgba-4: rgba(64, 217, 241, .11);
+        --mec-primary-border-radius: 3px;
+        --mec-container-normal-width: 1196px;
+        --mec-container-large-width: 1690px;
+        --mec-fes-main-color: #40d9f1;
+        --mec-fes-main-color-rgba-1: rgba(64, 217, 241, 0.12);
+        --mec-fes-main-color-rgba-2: rgba(64, 217, 241, 0.23);
+        --mec-fes-main-color-rgba-3: rgba(64, 217, 241, 0.03);
+        --mec-fes-main-color-rgba-4: rgba(64, 217, 241, 0.3);
+        --mec-fes-main-color-rgba-5: rgb(64 217 241 / 7%);
+        --mec-fes-main-color-rgba-6: rgba(64, 217, 241, 0.2);
+        --mec-fluent-main-color: #ade7ff;
+        --mec-fluent-main-color-rgba-1: rgba(173, 231, 255, 0.3);
+        --mec-fluent-main-color-rgba-2: rgba(173, 231, 255, 0.8);
+        --mec-fluent-main-color-rgba-3: rgba(173, 231, 255, 0.1);
+        --mec-fluent-main-color-rgba-4: rgba(173, 231, 255, 0.2);
+        --mec-fluent-main-color-rgba-5: rgba(173, 231, 255, 0.7);
+        --mec-fluent-main-color-rgba-6: rgba(173, 231, 255, 0.7);
+        --mec-fluent-bold-color: #00acf8;
+        --mec-fluent-bg-hover-color: #ebf9ff;
+        --mec-fluent-bg-color: #f5f7f8;
+        --mec-fluent-second-bg-color: #d6eef9;
+      }
+    </style>
+  </head>
+  <body class="page-template-default page page-id-2381 mec-theme-hello-elementor ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-kit-6 elementor-page elementor-page-2381">
+      <div data-elementor-type="wp-post" data-elementor-id="13" class="elementor elementor-13" data-elementor-post-type="elementor-hf">
+          <div class="elementor-element elementor-element-f54d7a4 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no e-con e-child" data-id="f54d7a4" data-element_type="container">
+            <div class="e-con-inner">
+                  <div class="elementor-element elementor-element-6cea1af elementor-view-default elementor-widget elementor-widget-icon" data-id="6cea1af" data-element_type="widget" data-widget_type="icon.default">
+                    <div class="elementor-widget-container">
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-412a6a8 elementor-view-default elementor-widget elementor-widget-icon" data-id="412a6a8" data-element_type="widget" data-widget_type="icon.default">
+                  </div>
+                  </div>
+                  <div class="elementor-element elementor-element-fd53d3c elementor-view-default elementor-widget elementor-widget-icon" data-id="fd53d3c" data-element_type="widget" data-widget_type="icon.default">
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+      <main id="content" class="site-main post-2381 page type-page status-publish hentry">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <table class="mtQJtX">
+            <thead class="INip7I wixui-table__header">
+              <tr class="V11d0G wixui-table__row" style="width: 860px;">
+                <th class="KSx14q wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div>Item Code</div>
+                  </div>
+                </th>
+                <th class="KSx14q wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div>Level</div>
+                  </div>
+                </th>
+                <th class="KSx14q wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div>Project</div>
+                  </div>
+                </th>
+                <th class="KSx14q wixui-table__cell" style="width: 90px;">
+                  <div class="AxaXxM">
+                    <div>Download</div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="VUpDdz cXFcCU wixui-table__body">
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8101E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Ice Breaker</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8101e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8100E1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Evaluation and Feedback—First Speech</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8100e1-evaluation-resource-first-speech-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8100E2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Evaluation and Feedback—Second Speech</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8100e2-evaluation-resource-second-speech.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8321E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1/3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Researching and Presenting</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8321e-evaluation-resource.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8103E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Writing a Speech with Purpose</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8103e-evaluation-resource-ff.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8104E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">1</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Introduction to Vocal Variety and Body Language</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8104e1-evaluation-resource-r.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8200E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2/3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Active Listening</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8200e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8201E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2/3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Connect with Your Audience</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8201e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8202E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Cross-Cultural Understanding</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8202e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8203E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2/3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Effective Body Language</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8203e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8204E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Introduction to Toastmasters Mentoring</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8204e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8205E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Managing Time</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8205e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td> >
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8206E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Understanding Your Communication Style</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8206e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8207E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Understanding Your Leadership Style</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8207e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8208E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">2/3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Know Your Sense of Humor</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8208e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8300E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Connect with Storytelling</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8300e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8301E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Creating Effective Visual Aids</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8301e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8302E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Deliver Social Speeches</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8302e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8303E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Develop a Communication Plan</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8303e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8304E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Focus on the Positive</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8304e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8305E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Inspire Your Audience</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8305e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8306E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Make Connections Through Networking</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8306e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8307E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Negotiate the Best Outcome</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8307e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8308E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Persuasive Speaking</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8308e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8309E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Planning and Implementing</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8309e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8310E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Prepare for an Interview</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8310e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8312E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Present a Proposal</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8312e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8313E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Reaching Consensus</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8313e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8314E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Successful Collaboration</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8314e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8315E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Understanding Conflict Resolution</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8315e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8316E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Understanding Emotional Intelligence</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8316e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8317E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Understanding Vocal Variety</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8317e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8318E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Using Descriptive Language</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8318e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8319E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Using Presentation Software</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8319e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8320E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">3</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Engage Your Audience with Humor</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8320e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8400E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Building a Social Media Presence</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8400e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8401E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Communicate Change</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8401e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8402E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Create a Podcast</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8402e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8403E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Improvement Through Positive Coaching</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8403e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8404E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Leading in Difficult Situations</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8404e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8405E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Leading Your Team</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8405e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8406E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Manage Change</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8406e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8407E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Manage Online Meetings</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8407e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8408E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Manage Projects Successfully</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8408e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8409E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Managing a Difficult Audience</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8409e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8410E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Mentoring</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8410e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8411E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Motivate Others</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8411e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8412E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Public Relations Strategies</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8412e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8413E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Question-and-Answer Session</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8413e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8414E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Write a Compelling Blog</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8414e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8415E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">4</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">The Power of Humor In an Impromptu Speech</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8415e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8500E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Advanced Mentoring</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8500e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8501E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Develop Your Vision</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8501e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8502E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Ethical Leadership</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8502e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8503E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">High Performance Leadership</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8503e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8504E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Lead in Any Situation</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8504e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8505E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Leading in Your Volunteer Organization</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8505e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8506E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Lessons Learned</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8506e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8507E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Manage Successful Events</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8507e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8508E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Moderate a Panel Discussion</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8508e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8509E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Prepare to Speak Professionally</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8509e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8510E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Reflect on Your Path</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8510e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8511E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Team Building</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8511e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8512E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Deliver Your Message with Humor</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8512e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+              <tr class="UhXTve wixui-table__row" style="width: 860px;">
+                <td class="VG9vCO wixui-table__cell" style="width: 100px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">8599E</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 60px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">5</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 500px;">
+                  <div class="AxaXxM">
+                    <div class="ZTH0AF">Distinguished Toastmaster</div>
+                  </div>
+                </td>
+                <td class="VG9vCO wixui-table__cell" style="width: 70px;">
+                  <a data-testid="linkElement" href="https://toastmasterscdn.azureedge.net/medias/files/department-documents/education-documents/evaluation-resources/english/8599e-evaluation-resource-ffe.pdf" target="_blank" rel="noopener" class="AxaXxM">
+                    <div class="ZTH0AF" style="text-align: center;">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+  </body>
 </html>
